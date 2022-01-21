@@ -1,7 +1,7 @@
 import { render } from "react-dom";
-import Utils from "./Utils.js";
+import App from './App'
 
 render(
-    <Utils />,
+    <App />,
     document.getElementById('root')
 )
