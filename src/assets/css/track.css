@@ -1,0 +1,86 @@
+.track-container{
+    display: flex;
+    width: 100%;
+    background-color: var(--light-color);
+    height: calc(100% - 92px - 130px);
+}
+
+.form-container{
+    display: grid;
+    text-align: center;
+    width: 70%;
+}
+
+.text-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content h2{
+    position: relative;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--primary-color);
+    top: -15px;
+    left: -10%;
+}
+
+.input-track{
+    text-align: center;
+}
+
+.input-shipping{
+    position: relative;
+    width: 50%;
+    top: -20px;
+    left: -10%;
+    padding: 20px;
+    border: 7px solid var(--secondary-color);
+    text-align: center;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.bi-search{
+    position: relative;
+    top: -20px;
+    left: -15%;
+    font-size: 26px;
+}
+
+.btn-track{
+    position: relative;
+    text-transform: uppercase;
+    top: 30px;
+    left: -11%;
+    font-size: 26px;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 20px 80px 20px 80px;
+    border: none;
+    border-radius: 15px;
+}
+
+.img-box{
+    width: 30%;
+}
+
+.img-track{
+    position: relative;
+    left: -10%;
+    bottom: -10%;
+    height: 650px;
+}
+
+.input-shipping:focus{
+    transition: width .25s ease;
+    width: 55%;
+}
+
+.btn-track:hover{
+    outline: 3px solid var(--primary-color);
+}

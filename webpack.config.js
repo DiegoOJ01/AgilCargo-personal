@@ -2,42 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 
-//rules for each type of files
-const rulesForJsAndJsx = {
-    test: /\.(js|jsx)$/,
-    exclude: /node_modules/,
-    use: {
-        loader: 'babel-loader'
-    }
-}
-
-const rulesForHtml = {
-    test: /\.html$/,
-    use: {
-        loader: 'html-loader'
-    }
-}
-
-const rulesForCssAndScss = {
-    test: /\.(css|scss)$/,
-    use: ['css-loader', 'style-loader', 'sass-loader']
-}
-
-const rulesForAssets = {
-    test: /\.(png|svg|jpg|gif)$/,
-    type: 'asset'
-}
-
-
-// rules for webpack
-const rules = [
-    rulesForJsAndJsx, 
-    rulesForHtml, 
-    rulesForCssAndScss, 
-    rulesForAssets
-]
-
-//configuration for webpack
 module.exports = (env, argv) => {
     const { mode } = argv;
     const isProduction = mode === 'production';
@@ -58,7 +22,32 @@ module.exports = (env, argv) => {
             }
         },
         module: {
-            rules
+            rules: [
+                {
+                    test: /\.(js|jsx)$/,
+                    exclude: /node_modules/,
+                    use: {
+                        loader: 'babel-loader'
+                    }
+                },
+                {
+                    test: /\.html$/,
+                    use: {
+                        loader: 'html-loader'
+                    }
+                },
+                {
+                    test: /\.(css|scss)$/,
+                    use: [
+                        'style-loader',
+                        'css-loader' 
+                    ]
+                },
+                {
+                    test: /\.(png|svg|jpg|gif)$/,
+                    type: 'asset'
+                }
+            ]
         },
         plugins: [
             new HtmlWebpackPlugin({ template: './src/public/index.html' })

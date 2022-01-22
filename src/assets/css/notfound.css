@@ -1,0 +1,30 @@
+.notfound{
+    background-color: var(--light-color);
+    display: grid;
+    place-content: center;
+    margin: 0;
+    height: calc(100% - 92px - 130px);
+}
+
+.notfoundcont{
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.link-notfound{
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.link-notfound:hover{
+    color: var(--light-color);
+}

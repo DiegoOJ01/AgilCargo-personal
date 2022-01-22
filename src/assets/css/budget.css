@@ -1,0 +1,83 @@
+.budget-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-color);
+    width: 100%;
+    height: calc(100% - 92px - 130px);
+}
+
+/* img container */
+.img-budget-box{
+    width: 30%;
+    height: 100%;
+}
+
+.img-budget{
+    height: 400px;
+}
+
+/* form */
+.text-budget{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-budget h2{
+    position: relative;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--primary-color);
+    top: 5px;
+    left: -10%;
+}
+
+.form-budget{
+    display: grid;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+}
+
+.selects-budget{
+    position: relative;
+    width: 40%;
+    padding: 10px 20px 10px 20px;
+    margin: 0 25px 25px 0;
+    text-align: center;
+    top: -15px;
+    left: -10%;
+    border: 5px solid var(--secondary-color);
+    border-radius: 20px;
+    font-size: 20px;
+    outline: none;
+}
+
+.img-budget{
+    position: relative;
+    left: 10%;
+    bottom: -3%;
+    height: 700px;
+}
+
+.buttons-budget{
+    position: relative;
+    top: 5%;
+    left: -10%;
+}
+
+.btn-budget{
+    font-size: 26px;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 50px 10px 50px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.btn-budget:hover{
+    outline: 3px solid var(--primary-color);
+}
