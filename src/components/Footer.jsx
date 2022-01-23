@@ -1,6 +1,3 @@
-import "@assets/css/footer.css";
-
-
 const Footer = () => {
     return (
         <footer className="footer">
@@ -25,13 +22,19 @@ const Footer = () => {
             <div className="container-social-media">
                 <ul className="list-social-media">
                     <li>
-                        <i className="bi bi-instagram"></i>
+                        <a href="http://instagram.com" target={"_blank"} className="social-link">
+                            <i className="bi bi-instagram"></i>
+                        </a>
                     </li>
                     <li>
-                        <i className="bi bi-linkedin"></i>
+                        <a href="http://linkedin.com" target={"_blank"} className="social-link">
+                            <i className="bi bi-linkedin"></i>
+                        </a>
                     </li>
                     <li>
-                        <i className="bi bi-twitter"></i>
+                        <a href="http://twitter.com" target={"_blank"} className="social-link">
+                            <i className="bi bi-twitter"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
